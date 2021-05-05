@@ -95,12 +95,69 @@
   }
 
 
+/*En esta etiqueta le daremos el aspecto que queremos que tenga el menú desplegable más adelante*/
+        
+a{
+    font-size: 20px;
+ }
+
+a:link {
+    color:red;
+} 
+
+a:active {
+    color:green;/* en el momento de hacer click */
+}
+
+a:hover, a:focus { /*Una vez pasemos el cursor por encima*/
+    color:blue;
+    cursor: crosshair;
+} 
+
+a:visited { /* Una vez lo hayamos visitado se quedará de este color*/
+    color:rgb(181, 223, 240);
+}
+
+ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+ display: inline-block;
+ color: white;
+ text-align: center;
+ padding: 14px 16px; 
+ padding: 14px 16px;
+ padding: 14px 16px; 
+ text-decoration: none;
+}
+/* Cuando pasemos el puntero por encima nos marcará el fonde en color negro escuro */
+
+li a:hover {
+ background-color: #111;
+}
+
+.active {
+  background-color: red;
+}
+ 
+
+
 
 main {
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 50%;
     margin-bottom: 10px;
+    margin-top: 10px;
     padding: 10px;
     
     overflow: auto;
@@ -110,7 +167,7 @@ main {
 section {
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 50%;
     margin-bottom: 10px;
     padding: 10px;
     
@@ -124,7 +181,7 @@ aside{
 
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 50%;
     margin-bottom: 10px;
     padding: 10px;
    
@@ -137,7 +194,7 @@ footer{
 
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 50%;
     margin-bottom: 10px;
     padding: 10px;
    
